@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продуктовый магазин</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Магазин товаров</h1>
+
+  <div class="controls">
+    <select id="category-filter">
+      <option value="all">Все категории</option>
+      <option value="electronics">Электроника</option>
+      <option value="jewelery">Украшения</option>
+      <option value="men's clothing">Мужская одежда</option>
+      <option value="women's clothing">Женская одежда</option>
+    </select>
+
+    <select id="sort-price">
+      <option value="asc">Сначала дешевые</option>
+      <option value="desc">Сначала дорогие</option>
+    </select>
+
+    <input type="text" id="search" placeholder="Поиск товаров...">
+  </div>
+
+  <div id="loader">Загрузка...</div>
+  <div id="product-container" class="grid"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
